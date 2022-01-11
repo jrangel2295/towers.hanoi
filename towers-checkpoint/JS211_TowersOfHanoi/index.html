@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Towers of Hanoi</title>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="towers">
+    <h1 >Towers Of Hanoi</h1>
+    <button onclick="resetGame()">Reset Game</button>
+    <br>
+    <h6>Number of Moves: <span id="moves"></span></h6>
+  </div>
+    <hr/>
+
+  <div class="text">
+    <ul>Double Click to Select</ul>
+    <ul>De-Select a piece then click on the row you want that piece in.</ul>
+  </div>
+    <hr/>
+      <section class="game">
+    <div id="top-row" data-row="top" class="red row" onclick="dropStone(this)" ondblclick="selectRow(this)" ></div>
+      <div id="middle-row" data-row="middle" class="yellow row" onclick="dropStone(this)" ondblclick="selectRow(this)"  ></div>
+      <div id="bottom-row" class="green row" data-row="bottom" onclick="dropStone(this)" ondblclick="selectRow(this)"  >
+        <div id="4" data-size="4" data-color="yellow" class="stone"><b>4</b></div>
+        <div id="3" data-size="3" data-color="red" class="stone"><b>3</b></div>
+        <div id="2" data-size="2" data-color="orange" class="change" class="stone"><b>2</b></div>
+        <div id="1" data-size="1" data-color="blue" class="stone"><b>1</b></div>
+      </div>
+    </section>
+    <hr/>
+    <div id="moveMessage" style="color:rgb(250, 250, 250)"></div>
+    <br>
+  </body>
+</html>

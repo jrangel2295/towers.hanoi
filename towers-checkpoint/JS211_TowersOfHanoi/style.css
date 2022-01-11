@@ -1,0 +1,95 @@
+html { 
+  color: rgb(155, 155, 155);
+  background: url("https://i.pinimg.com/originals/20/ae/f2/20aef23d39a8dcb74bf663ed89ab08d6.gif") fixed; 
+  background-size: cover;
+  border:none;
+}
+
+[data-row] {
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  margin: 25px;
+
+}
+
+.row {
+  z-index: -10;
+  border: none;
+}
+
+[data-row].red {
+  background-color: rgb(255, 255, 255);
+}
+
+[data-row].yellow {
+  background-color: rgb(255, 253, 253);
+}
+
+[data-row].green {
+  background-color: rgb(255, 255, 255);
+}
+
+[data-row].blue {
+  background-color: rgb(165, 182, 197);
+}
+
+.stone {
+  z-index: 10;
+}
+
+[data-color] {
+  width: 35px;
+  float: left;
+  background-color: darkgreen;
+  
+}
+
+[data-color="blue"] {
+  height: 40px;
+  background-color: rgb(136, 136, 223);
+}
+
+[data-color="green"] {
+  height: 75px;
+  background-color: rgb(115, 170, 115);
+}
+
+[data-color="red"] {
+  height: 100px;
+  background-color: rgb(155, 87, 87);
+}
+
+[data-color="yellow"] {
+  height: 125px;
+  background-color: rgb(160, 144, 57);
+}
+
+#announce-game-won {
+  font-size: 50px;
+  text-align: center;
+}
+
+#moveMessage {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+h6{
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+}
+.towers, .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+}
+.change {
+  height: 50px;
+  }
+  
